@@ -7,13 +7,17 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="IXHUA" />
+
   <link rel="manifest" href="manifest.json" />
-  <link rel="apple-touch-icon" href="assets/ixhua/mark.svg" />
-  <link rel="stylesheet" href="css/styles.css?v=0.9" />
+  <link rel="apple-touch-icon" href="mark.svg" />
+
+  <link rel="stylesheet" href="styles.css?v=013fix3" />
+  <link rel="stylesheet" href="premium.css?v=013fix3" />
+  <link rel="stylesheet" href="ixhua.css?v=013fix3" />
+
   <title>IXHUA — Adaptive training</title>
-  <link rel="stylesheet" href="css/premium.css?v=0.9" />
-  <link rel="stylesheet" href="css/ixhua.css" />
 </head>
+
 <body>
   <div class="app-shell">
     <aside class="sidebar" aria-label="Primary navigation">
@@ -21,9 +25,12 @@
         <div class="brand">IXHUA</div>
         <div class="brand-sub">ADAPTIVE TRAINING</div>
       </div>
+
       <nav id="sidebarNav" class="nav-list"></nav>
+
       <div class="side-footer">
-        <span class="status-dot"></span> On this device
+        <span class="status-dot"></span>
+        On this device
       </div>
     </aside>
 
@@ -33,9 +40,19 @@
           <div class="eyebrow">IXHUA</div>
           <h1 id="pageTitle">Today</h1>
         </div>
+
         <div class="top-actions">
-          <button class="ghost-btn" id="languageBtn" type="button">EN / ES</button><button class="ghost-btn" id="resetDemoBtn" type="button">Settings</button>
-          <div class="save-pill">Saved locally</div>
+          <button class="ghost-btn" id="languageBtn" type="button">
+            EN / ES
+          </button>
+
+          <button class="ghost-btn" id="resetDemoBtn" type="button">
+            Settings
+          </button>
+
+          <div class="save-pill">
+            Saved locally
+          </div>
         </div>
       </header>
 
@@ -43,20 +60,26 @@
     </main>
   </div>
 
-  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation"></nav>
+  <nav
+    class="mobile-nav"
+    id="mobileNav"
+    aria-label="Mobile navigation"
+  ></nav>
 
-  <script src="js/platform.js"></script>
-  <script src="js/data.js?v=0.9"></script>
-  <script src="js/engine.js?v=0.9"></script>
-  <script src="js/ixhua/core.js"></script>
-  <script src="js/ixhua/running.js"></script>
-  <script src="js/ixhua/exercises.js"></script>
-  <script src="js/ixhua/training.js"></script>
-  <script src="js/ixhua/athlete-nutrition.js"></script>
-<script src="js/ixhua/onboarding.js"></script>
-  <script src="js/ixhua/athlete-ui.js"></script>
-  <script src="js/ixhua/running-ui.js"></script>
-  <script src="js/app.js?v=0.9"></script>
-  <script src="js/preview-client.js" defer></script>
+  <script src="platform.js?v=013fix3"></script>
+  <script src="data.js?v=013fix3"></script>
+  <script src="engine.js?v=013fix3"></script>
+
+  <script src="core.js?v=013fix3"></script>
+  <script src="running.js?v=013fix3"></script>
+  <script src="exercises.js?v=013fix3"></script>
+  <script src="training.js?v=013fix3"></script>
+  <script src="athlete-nutrition.js?v=013fix3"></script>
+  <script src="onboarding.js?v=013fix3"></script>
+  <script src="athlete-ui.js?v=013fix3"></script>
+  <script src="running-ui.js?v=013fix3"></script>
+
+  <script src="app.js?v=013fix3"></script>
+  <script src="preview-client.js?v=013fix3" defer></script>
 </body>
 </html>
