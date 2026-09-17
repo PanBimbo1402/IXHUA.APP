@@ -1,0 +1,52 @@
+:root{color-scheme:dark}
+body:has(.preview-shell){margin:0;background:#070a0f;color:#f4f7fb;font:16px/1.6 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.preview-shell{max-width:1024px;margin:auto;padding:48px max(20px,env(safe-area-inset-right)) 64px max(20px,env(safe-area-inset-left))}
+.preview-shell h1{font-size:clamp(30px,5vw,52px);line-height:1.08;letter-spacing:-.035em;margin:12px 0 22px}
+.preview-shell h2,.ixhua-review h2{font-size:24px;line-height:1.2}
+.preview-shell .eyebrow,.ixhua-review .eyebrow{color:#8f9cae;letter-spacing:.13em;font-size:11px;font-weight:700}
+.preview-shell .lead{font-size:18px}
+.preview-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:40px;margin:32px 0}
+.preview-shell section{padding:24px 0;border-top:1px solid #223044}
+.preview-shell .qr{display:block;background:#fff;width:min(360px,100%);height:auto;border:12px solid #fff;box-sizing:border-box;image-rendering:pixelated}
+.preview-shell a,.ixhua-review a{color:#91b7ff}
+.preview-shell .primary-link{display:block;padding:14px 18px;color:#fff;background:#335ed7;border-radius:10px;text-decoration:none;text-align:center;margin-top:24px}
+.preview-shell li{margin:12px 0}
+.preview-shell .small{font-size:13px;color:#acb6c7}
+.preview-shell .warning,.ixhua-review .warning{color:#ffc875;border-left:3px solid #ffb84d;padding-left:14px}
+.preview-shell summary,.ixhua-review summary{cursor:pointer;padding:12px 0;min-height:24px;font-weight:600}
+.preview-shell .network-choices{display:flex;flex-wrap:wrap;gap:6px 16px;margin:14px 0}
+.preview-shell .network-choices a{padding:8px 0;font-size:13px}
+.preview-shell .wrap{overflow-wrap:anywhere}
+.ixhua-preview-banner{display:block;position:sticky;top:0;z-index:45;width:100%;min-height:44px;padding:10px 16px;border:0;border-bottom:1px solid #223044;border-radius:0;background:#101a2e;color:#c1d5ff;text-align:center;font:600 12px/1.4 system-ui;cursor:pointer}
+.ixhua-review{width:min(760px,calc(100vw - 24px));max-height:calc(100dvh - 32px);box-sizing:border-box;background:#0d131c;color:#f4f7fb;border:1px solid #223044;border-radius:18px;padding:24px;overflow:auto;font:15px/1.55 system-ui,-apple-system,sans-serif}
+.ixhua-review::backdrop{background:rgba(0,0,0,.72)}
+.ixhua-review header{display:flex;align-items:start;gap:16px;justify-content:space-between}
+.ixhua-review header h2{margin:8px 0}
+.ixhua-review h3{font-size:18px;margin-top:28px}
+.ixhua-review p{overflow-wrap:anywhere}
+.ixhua-review li{margin:14px 0}
+.ixhua-review li p{color:#b4bfce;margin:4px 0}
+.ixhua-review label{display:grid;gap:6px;font-weight:600;margin:12px 0}
+.ixhua-review input,.ixhua-review textarea,.ixhua-review select{box-sizing:border-box;max-width:100%;width:100%;min-height:44px;padding:10px 12px;border:1px solid #33455e;border-radius:8px;background:#070a0f;color:#f4f7fb;font:400 16px/1.5 system-ui}
+.ixhua-review button{min-height:44px;padding:12px 16px;margin:8px 8px 8px 0;border:1px solid #3a5275;border-radius:8px;background:#182b4b;color:#f4f7fb;font:600 14px system-ui;cursor:pointer}
+.ixhua-review header button{font-size:24px;min-width:44px;margin:0;padding:4px}
+.ixhua-review .review-fields{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.ixhua-review .check-label{display:flex;align-items:center;gap:10px}
+.ixhua-review .check-label input{width:22px;min-width:22px;height:22px;min-height:22px}
+.ixhua-review .review-check{border-top:1px solid #223044;padding-top:18px;margin-top:20px}
+.ixhua-review .review-check span{font-weight:400;color:#b4bfce}
+.ixhua-review .review-check select{max-width:180px;margin-top:5px}
+.ixhua-review code{overflow-wrap:anywhere;font-size:12px}
+.ixhua-review button:disabled{opacity:.5;cursor:default}
+.ixhua-owner-controls{padding-bottom:20px;border-bottom:1px solid #33455e}
+.ixhua-owner-controls h3{margin-top:18px}
+.ixhua-review #ixhua-owner-fresh{background:#335ed7;color:white}
+.ixhua-review #ixhua-owner-reset{padding:0 14px 14px;border:1px solid #99763e;border-radius:10px}
+.ixhua-review [hidden]{display:none!important}
+.ixhua-review #ixhua-owner-reset-confirm{background:#66311f;border-color:#b8845c}
+.ixhua-owner-onboarding{border:1px solid #496182;background:#132138;color:#c1d5ff;border-radius:8px;padding:8px 10px;min-height:44px;flex-shrink:0;font:600 12px/1.4 system-ui;cursor:pointer}
+.ix-onboarding-shell > header:has(.ixhua-owner-onboarding){flex-wrap:wrap;gap:8px}
+.ixhua-owner-onboarding:focus-visible{outline:3px solid #91b7ff;outline-offset:3px}
+.ixhua-review :focus-visible,.preview-shell :focus-visible,.ixhua-preview-banner:focus-visible{outline:3px solid #91b7ff;outline-offset:4px}
+@media(max-width:600px){.preview-grid{grid-template-columns:1fr;gap:12px}.preview-shell{padding-top:28px}.ixhua-review{padding:18px;max-height:calc(100dvh - 16px)}.ixhua-review .review-fields{grid-template-columns:1fr;gap:0}.ixhua-review ul{padding-left:22px}}
+@media(prefers-reduced-motion:reduce){.ixhua-review,.ixhua-preview-banner{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
