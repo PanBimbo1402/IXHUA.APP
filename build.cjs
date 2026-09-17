@@ -1,0 +1,10 @@
+const fs=require('node:fs');
+const path=require('node:path');
+const root=__dirname;
+let app=fs.readFileSync(path.join(root,'js/app.js'),'utf8');
+const start='/* PREMIUM_EXTENSION */',end='/* END_PREMIUM_EXTENSION */';
+const source=fs.readFileSync(path.join(root,'js/premium-source.js'),'utf8')+'\n'+fs.readFileSync(path.join(root,'js/ixhua/bridge-source.js'),'utf8');
+const i=app.indexOf(start),j=app.indexOf(end);
+if(i<0||j<=i) throw Error('Application build markers are missing or out of order; source was not modified.');
+app=app.slice(0,i)+start+'\n'+source+'\n'+end+app.slice(j+end.length);
+fs.writeFileSync(path.join(root,'js/app.js'),app);
